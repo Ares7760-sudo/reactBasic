@@ -5,9 +5,9 @@ class MyComponent extends React.Component {
     state = {
         firstName: '',
         lastName: '',
-        arrJobs: [{id:'job1', title:'Developer', salary:'1000$'},
-            {id:'job2', title:'Tester', salary:'2000$'},
-            {id:'job3', title:'PM', salary:'3000$'}
+        arrJobs: [{id:'job1', title:'Developer', salary:'1000'},
+            {id:'job2', title:'Tester', salary:'2000'},
+            {id:'job3', title:'PM', salary:'3000'}
         ]
     }
 
