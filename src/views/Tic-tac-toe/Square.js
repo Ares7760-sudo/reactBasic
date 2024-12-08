@@ -1,9 +1,21 @@
 import React from 'react';
+import './game.scss';
+import { useState } from 'react';
 
 class Square extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: null
+        }
+    }
     render () {
         return (
-            <>Square Component</>
+            <button className='square'
+                onClick={this.props.onClick}
+            >
+                {this.props.value}
+            </button>
         )
     }
 }
