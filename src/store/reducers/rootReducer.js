@@ -1,3 +1,4 @@
+
 const initState = {
     users: [
         { id:1, name: 'Ares7760-sudo'},
@@ -22,8 +23,6 @@ const rootReducer = (state = initState, action) => {
         default:
             return state;
     }
-
-    return state;
 }
 
 export default rootReducer;

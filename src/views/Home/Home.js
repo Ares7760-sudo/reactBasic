@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Color from '../HOC/Color';
 
 class Home extends React.Component {
     
@@ -45,13 +46,13 @@ const mapStateToProps = (state) => {
     return {
         dataRedux: state.users
     }
-}
+};
 
 const mapDispatchToProps = (dispatch) => {
     return {
         deleteUserRedux: (userDelete) => dispatch({type: 'DELETE_USER', payload: userDelete}),
         addUserRedux: () => dispatch({type: 'ADD_USER'})
     }
-}
+};
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default Color(connect(mapStateToProps, mapDispatchToProps)(Home));
