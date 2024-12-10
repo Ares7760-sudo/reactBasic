@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Color from '../HOC/Color';
+import logo from '../../assets/images/logo_1.png';
 
 class Home extends React.Component {
     
@@ -18,8 +19,8 @@ class Home extends React.Component {
 
         return(
             <>
-            <div>Hello world ^^ !
-            </div>
+            <h1>HELLO WORLD ^^ !
+            </h1>
             <div>
                 {listUsers && listUsers.length > 0 &&
                     listUsers.map((item, index) => {
